@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1250</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lbl_background">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1250</width>
+      <height>750</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/images/background.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_quit">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>10</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#btn_quit{	
+	background-color: transparent;
+	color: rgb(0, 0, 0);
+	border-radius:5px;
+}
+QPushButton#btn_quit:hover{	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgb(255, 65, 65), stop:1  rgb(255, 65, 65));
+}
+QPushButton#btn_quit:pressed{
+	padding-left:2px;
+	padding-top:2px;	
+	background-color: rgb(255, 65, 65);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/icons/feather/x.svg</normaloff>:/icons/feather/x.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_hide">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>10</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#btn_hide{	
+	background-color: transparent;
+	color: rgb(0, 0, 0);
+	border-radius:5px;
+}
+QPushButton#btn_hide:hover{	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgb(255, 65, 65), stop:1  rgb(255, 65, 65));
+}
+QPushButton#btn_hide:pressed{
+	padding-left:2px;
+	padding-top:2px;	
+	background-color: rgb(255, 65, 65);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/icons/feather/minus.svg</normaloff>:/icons/feather/minus.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_settings">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>696</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#btn_settings {	
+	background-color: transparent;
+	color: rgb(0, 0, 0);
+	border-radius:5px;
+}
+QPushButton#btn_settings:hover{	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgb(255, 255, 255), stop:1  rgb(255, 255, 255));
+}
+QPushButton#btn_settings:pressed{
+	padding-left:2px;
+	padding-top:2px;	
+	background-color: rgb(255, 255, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/icons/feather/settings.svg</normaloff>:/icons/feather/settings.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_twitch">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>696</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#btn_twitch{	
+	background-color: transparent;
+	color: rgb(0, 0, 0);
+	border-radius:5px;
+}
+QPushButton#btn_twitch:hover{	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgb(255, 255, 255), stop:1  rgb(255, 255, 255));
+}
+QPushButton#btn_twitch:pressed{
+	padding-left:2px;
+	padding-top:2px;	
+	background-color: rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/icons/feather/twitch.svg</normaloff>:/icons/feather/twitch.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>40</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_twitter">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>696</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#btn_twitter{	
+	background-color: transparent;
+	color: rgb(0, 0, 0);
+	border-radius:5px;
+}
+QPushButton#btn_twitter:hover{	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgb(255, 255, 255), stop:1  rgb(255, 255, 255));
+}
+QPushButton#btn_twitter:pressed{
+	padding-left:2px;
+	padding-top:2px;	
+	background-color: rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/icons/feather/twitter.svg</normaloff>:/icons/feather/twitter.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_youtube">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>696</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#btn_youtube{	
+	background-color: transparent;
+	color: rgb(0, 0, 0);
+	border-radius:5px;
+}
+QPushButton#btn_youtube:hover{	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgb(255, 255, 255), stop:1  rgb(255, 255, 255));
+}
+QPushButton#btn_youtube:pressed{
+	padding-left:2px;
+	padding-top:2px;	
+	background-color: rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/icons/feather/youtube.svg</normaloff>:/icons/feather/youtube.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_announcements">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>221</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#btn_announcements {	
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	border-radius:5px;
+}
+QPushButton#btn_announcements:hover{	
+	color: rgb(255,255,255);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgb(0,0,0));
+}
+QPushButton#btn_announcements:pressed{
+	padding-left:2px;
+	padding-top:2px;	
+	background-color: rgb(0,0,0);
+}</string>
+    </property>
+    <property name="text">
+     <string>Duyurular</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_instagram">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>646</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#btn_instagram {	
+	background-color: transparent;
+	color: rgb(0, 0, 0);
+	border-radius:5px;
+}
+QPushButton#btn_instagram:hover{	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgb(255, 255, 255), stop:1  rgb(255, 255, 255));
+}
+QPushButton#btn_instagram:pressed{
+	padding-left:2px;
+	padding-top:2px;	
+	background-color: rgb(255, 255, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/icons/feather/instagram.svg</normaloff>:/icons/feather/instagram.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_facebook">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>646</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#btn_facebook{
+	background-color: transparent;
+	color: rgb(0, 0, 0);
+	border-radius:5px;
+}
+QPushButton#btn_facebook:hover{	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgb(255, 255, 255), stop:1  rgb(255, 255, 255));
+}
+QPushButton#btn_facebook:pressed{
+	padding-left:2px;
+	padding-top:2px;	
+	background-color: rgb(255, 255, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/icons/feather/facebook.svg</normaloff>:/icons/feather/facebook.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_sponsor">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>646</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#btn_sponsor{
+	background-color: transparent;
+	color: rgb(0, 0, 0);
+	border-radius:5px;
+}
+QPushButton#btn_sponsor:hover{	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgb(255, 255, 255), stop:1  rgb(255, 255, 255));
+}
+QPushButton#btn_sponsor:pressed{
+	padding-left:2px;
+	padding-top:2px;	
+	background-color: rgb(255, 255, 255);
+}
+
+	
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/icons/feather/beard.png</normaloff>:/icons/feather/beard.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_discord">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>646</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#btn_discord{
+	background-color: transparent;
+	color: rgb(0, 0, 0);
+	border-radius:5px;
+}
+QPushButton#btn_discord:hover{	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgb(255, 255, 255), stop:1  rgb(255, 255, 255));
+}
+QPushButton#btn_discord:pressed{
+	padding-left:2px;
+	padding-top:2px;	
+	background-color: rgb(255, 255, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/icons/feather/discord.png</normaloff>:/icons/feather/discord.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>70</width>
+      <height>60</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_color_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>637</y>
+      <width>239</width>
+      <height>5</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_pictures_1">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>720</y>
+      <width>16</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#btn_pictures_1{
+	background-color: rgb(0, 0, 0);
+	color: rgb(0, 0, 0);
+	border-radius:7px;
+}
+QPushButton#btn_pictures_1:hover{	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgb(0, 0, 0), stop:1  rgb(0, 0, 0));
+}
+QPushButton#btn_pictures_1:pressed{
+	padding-left:2px;
+	padding-top:2px;	
+	background-color: rgb(255,255,255);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_pictures">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>50</y>
+      <width>980</width>
+      <height>660</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_pictures_2">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>720</y>
+      <width>16</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#btn_pictures_2{
+	background-color: rgb(0, 0, 0);
+	color: rgb(0, 0, 0);
+	border-radius:7px;
+}
+QPushButton#btn_pictures_2:hover{	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgb(0, 0, 0), stop:1  rgb(0, 0, 0));
+}
+QPushButton#btn_pictures_2:pressed{
+	padding-left:2px;
+	padding-top:2px;	
+	background-color: rgb(255,255,255);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_pictures_3">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>720</y>
+      <width>16</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#btn_pictures_3{
+	background-color: rgb(0, 0, 0);
+	color: rgb(0, 0, 0);
+	border-radius:7px;
+}
+QPushButton#btn_pictures_3:hover{	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgb(0, 0, 0), stop:1  rgb(0, 0, 0));
+}
+QPushButton#btn_pictures_3:pressed{
+	padding-left:2px;
+	padding-top:2px;	
+	background-color: rgb(255,255,255);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_pictures_4">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>720</y>
+      <width>16</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#btn_pictures_4{
+	background-color: rgb(0, 0, 0);
+	color: rgb(0, 0, 0);
+	border-radius:7px;
+}
+QPushButton#btn_pictures_4:hover{	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgb(0, 0, 0), stop:1  rgb(0, 0, 0));
+}
+QPushButton#btn_pictures_4:pressed{
+	padding-left:2px;
+	padding-top:2px;	
+	background-color: rgb(255,255,255);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_pictures_5">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>720</y>
+      <width>16</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#btn_pictures_5{
+	background-color: rgb(0, 0, 0);
+	color: rgb(0, 0, 0);
+	border-radius:7px;
+}
+QPushButton#btn_pictures_5:hover{	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgb(0, 0, 0), stop:1  rgb(0, 0, 0));
+}
+QPushButton#btn_pictures_5:pressed{
+	padding-left:2px;
+	padding-top:2px;	
+	background-color: rgb(255,255,255);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_notifications">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>221</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#btn_notifications{	
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	border-radius:5px;
+}
+QPushButton#btn_notifications:hover{	
+	color: rgb(255,255,255);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgb(0,0,0));
+}
+QPushButton#btn_notifications:pressed{
+	padding-left:2px;
+	padding-top:2px;	
+	background-color: rgb(0,0,0);
+}</string>
+    </property>
+    <property name="text">
+     <string>Bildirimler</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
